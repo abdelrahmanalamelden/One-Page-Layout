@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONTS  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        background-color: hsl(30, 38%, 92%);
+        font-family: "Montserrat", sans-serif;
+        /* position: relative; */
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 96px 0;
+        margin: auto;
+      }
+
+      .card {
+        /* position: absolute;
+        left: 50%;
+        transform: translate(50%, -50%); */
+        display: grid;
+        grid-template-columns: 270px 271px;
+        background-color: white;
+        border-radius: 9px;
+        overflow: hidden;
+      }
+      .img {
+        width: 100%;
+        height: 100%;
+      }
+      .text-box {
+        padding: 24px;
+      }
+
+      .label {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: hsl(228, 12%, 48%);
+        font-size: 14px;
+      }
+      .card-heading {
+        font-family: "Fraunces";
+      }
+      .card-description {
+        line-height: 1.5;
+        color: hsl(228, 12%, 48%);
+        font-size: 14px;
+      }
+      .card-price {
+        color: hsl(158, 36%, 37%);
+        font-size: 24px;
+        font-weight: 700;
+        margin-right: 18px;
+      }
+      .discount {
+        font-size: 14px;
+        margin-left: 32px;
+        color: hsl(228, 12%, 48%);
+        font-weight: 400;
+        text-decoration: line-through;
+      }
+      .card-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 48px;
+        background-color: hsl(158, 36%, 37%);
+        border-radius: 9px;
+      }
+      .btn-text {
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+      }
+      .attribution {
+        font-size: 14px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      /* RESPONSIVE FOR MOBILE  */
+      @media (max-width: 375px) {
+        .card {
+          grid-template-columns: 1fr;
+        }
+        .img {
+          height: 220px;
+        }
+        .attribution {
+          line-height: 1.6;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="img-box">
+          <img
+            class="img"
+            src="/images/image-product-desktop.jpg"
+            alt="Product Image "
+          />
+        </div>
+        <div class="text-box">
+          <span class="label">Perfume </span>
+          <h1 class="card-heading">Gabrielle Essence Eau De Parfum</h1>
+          <p class="card-description">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <p class="card-price">
+            $149.99 <span class="discount">$169.99</span>
+          </p>
+          <a class="card-btn">
+            <img src="/images/icon-cart.svg" alt="Icon Cart" class="btn-icon" />
+            <span class="btn-text">Add to Cart </span></a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.linkedin.com/in/abdelrahman-alam-elden-92879b17a/"
+        >Abdelrahman Ashraf</a
+      >.
+    </div>
+  </body>
+</html>
