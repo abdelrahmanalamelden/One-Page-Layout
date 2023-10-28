@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  color: white;
+}
+.container {
+  padding: 96px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 4px;
+  padding-top: 19px;
+  background-color: hsl(216, 50%, 16%);
+  width: 250px;
+  border-radius: 12px;
+}
+.equilibrium-img {
+  position: relative;
+  width: 220px;
+  border-radius: 12px;
+  margin-left: 15px;
+}
+.img-box {
+  position: relative;
+}
+.veiw-icon {
+  position: absolute;
+  top: 88px;
+  z-index: 1;
+  left: 101px;
+  display: none;
+}
+
+.img-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 15px;
+  width: 220px;
+  height: 220px;
+
+  background-color: hsl(178, 100%, 50%);
+  opacity: 0.3;
+  border-radius: 12px;
+  display: none;
+}
+.img-box:hover::after {
+  display: block;
+}
+.img-box:hover .veiw-icon {
+  display: block;
+}
+.equilibrium-img:hover {
+  background-color: over;
+}
+.heading {
+  font-size: 18px;
+  margin: 12px 25px;
+}
+.heading:hover {
+  color: hsl(178, 100%, 50%);
+}
+.description {
+  margin: 8px 25px 12px;
+  width: 100%;
+  font-size: 14px;
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+}
+.time,
+.type,
+.creation,
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info {
+  gap: 70px;
+  padding: 14px 0;
+  border-bottom: 1px dotted hsl(215, 32%, 27%);
+}
+.type {
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: hsl(178, 100%, 50%);
+}
+.time {
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+.clock-icon {
+  width: 12px;
+}
+
+.creation {
+  gap: 18px;
+
+  margin: 12px 14px 12px 0px;
+}
+.avatar-img {
+  width: 26px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.creation-text {
+  font-size: 12px;
+  font-weight: 300;
+}
+.creation-text:hover {
+  color: hsl(178, 100%, 50%);
+}
+.creation-text span {
+  color: hsl(215, 51%, 70%);
+  margin-right: 4px;
+}
