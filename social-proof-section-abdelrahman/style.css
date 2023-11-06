@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "League Spartan", sans-serif;
+  background-color: hsl(300, 24%, 96%);
+}
+.container {
+  padding: 96px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.component {
+  width: 900px;
+}
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.heading {
+  font-size: 42px;
+  color: hsl(300, 43%, 22%);
+  margin-bottom: 24px;
+}
+.paragraph {
+  font-size: 14px;
+  line-height: 1.7;
+  color: hsl(303, 10%, 53%);
+}
+.stars {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.star {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding: 15px;
+  background-color: hsl(300, 24%, 91%);
+  border-radius: 9px;
+}
+._1 {
+  margin-right: 40px;
+}
+._2 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+._3 {
+  margin-left: 55px;
+}
+.rated-paragraph {
+  font-size: 13px;
+  color: hsl(300, 43%, 22%);
+  font-weight: bold;
+}
+.reveiws {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.reveiw {
+  background-color: hsl(300, 43%, 25%);
+  padding: 30px;
+  border-radius: 10px;
+  width: 218px;
+  height: 140px;
+}
+.re-2 {
+  margin-top: 20px;
+}
+.re-3 {
+  margin-top: 40px;
+}
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+.profile-info img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.name {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+.name span {
+  display: inline-block;
+  width: 100%;
+  color: hsl(333, 80%, 67%);
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 4px;
+}
+.customer-reveiw {
+  font-size: 14px;
+  color: white;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* ------------------------------------------------------  */
+/* RESPONSIVE  */
+/* ------------------------------------------------------  */
+@media (max-width: 900px) {
+  .container {
+    width: 80%;
+  }
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .heading {
+    text-align: center;
+    font-size: 32px;
+  }
+  .paragraph {
+    text-align: center;
+    font-size: 12px;
+  }
+  .star {
+    flex-direction: column;
+    gap: 5px;
+    margin: 0;
+    padding: 8px;
+  }
+  .reveiws {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+  .reveiw {
+    width: 80%;
+  }
+  /* .re-1,
+  .re-2,
+  .re-3 {
+    margin-left: 30%;
+  } */
+  .re-2,
+  .re-3 {
+    margin: 0;
+  }
+  .customer-reveiw {
+    font-size: 13px;
+  }
+}
